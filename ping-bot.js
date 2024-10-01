@@ -1,7 +1,7 @@
 const https = require('https'); // Change to https
 
 // The URL of your Replit bot
-const replitBotUrl = 'https://9b5dcba5-4010-4773-9b9b-02aab0d6bd46-00-1bbpjra9g180o.pike.replit.dev:3000/'; // Replace with your Replit URL
+const replitBotUrl = 'https://renderbot-8mfq.onrender.com'; // Replace with your Replit URL
 
 setInterval(() => {
     https.get(replitBotUrl, (res) => { // Use https.get instead of http.get
@@ -9,7 +9,7 @@ setInterval(() => {
     }).on('error', (err) => {
         console.error(`Error pinging Replit bot: ${err.message}`);
     });
-}, 1000); // Ping every second
+}, 10000); // Ping every 10 seconds
 
 // Start a simple HTTP server
 const http = require('http');
