@@ -1,7 +1,7 @@
 const http = require('http');
 
 // The URL of your Replit bot
-const replitBotUrl = 'http://9b5dcba5-4010-4773-9b9b-02aab0d6bd46-00-1bbpjra9g180o.pike.replit.dev:3000/'; // Replace with your Replit URL
+const replitBotUrl = 'https://9b5dcba5-4010-4773-9b9b-02aab0d6bd46-00-1bbpjra9g180o.pike.replit.dev:3000/'; // Replace with your Replit URL
 
 setInterval(() => {
     http.get(replitBotUrl, (res) => {
